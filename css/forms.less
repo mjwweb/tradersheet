@@ -1,0 +1,705 @@
+.formBackdrop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    //background: rgba(255,255,255, .2);
+    background: rgba(0,0,0, .65);
+    z-index: 99999;
+}
+
+.addTradeForm {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    padding: 15px;
+    width: 310px;
+    background: #2a2e3b;
+    border-radius: 12px;
+    z-index: 99999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.44);
+    border: 1px solid #575757;
+    opacity: 0;
+}
+.tradeFormHdrWrap {
+    display: none;
+}
+.tradeFormRow {
+    display: flex;
+    margin-bottom: 15px;
+}
+.tradeFormRow label {
+    text-align: left;
+    position: relative;
+    color: #ededed;
+    vertical-align: bottom;
+    font-size: 12px;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 5px;
+}
+.tradeFormRow input {
+    display: block;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ededed;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 3px 6px;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+.atfInputInac {
+    display: block;
+    width: 100%;
+    background: rgba(255,255,255, .04) !important;
+    //border: 1px solid transparent !important;
+}
+.atfSymbol {
+    text-transform: uppercase;
+}
+.lsTog {
+    position: relative;
+    display: flex;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.lsTog span {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.atfActSide[side=Long] {
+    background: green;
+}
+.atfActSide[side=Short] {
+    background: rgb(177, 0, 0);
+}
+
+// atf closed row
+
+.tradeFormClosedRow {
+    display: none;
+}
+
+//bottom row
+.tradeFormBtmRow {
+    display: flex;
+    text-align: left;
+}
+.atfClosedChbx {
+    margin-right: 5px;
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.tradeFormBtmRow label {
+    margin: 5px;
+    color: #fff;
+    align-self: center;
+    cursor: pointer;
+}
+.atfBtnsWrap {
+    margin: 5px;
+    margin-left: auto;
+}
+.saveNewTrade {
+    color: #fff;
+    background: #1c74e9;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+.saveNewTrade:hover {
+    cursor: pointer;
+}
+.cancelNewTrade {
+    color: #ededed;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+.cancelNewTrade:hover {
+    color: #fff;
+    background: rgba(255,255,255, .12);
+    cursor: pointer;
+}
+
+.settingsForm {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    width: 180px;
+    height: auto;
+    background: #2a2e3b;
+    z-index: 99999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.44);
+    border: 1px solid #575757;
+    border-top: none;
+    opacity: 0;
+}
+.settingsFormRow {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    color: #ededed;
+}
+.settingsFormRow:hover {
+    background: rgba(255,255,255, .12);
+    cursor: pointer;
+}
+.settingsFormRow span {
+    position: relative;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.settingsFormRow > i {
+    position: relative;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.settingsFormRow:last-child {
+    border-top: 1px solid rgba(255,255,255, .25);
+}
+
+// trade delete confirmation window
+
+.deleteTradesForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 15px;
+    background: #31313a;
+    z-index: 99999991;
+    border-radius: 6px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.deleteTradesFormHdr {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+.deleteTradesFormMsg {
+    color: #ccc;
+    font-size: 14px;
+}
+.cancelDeleteTrades {
+    color: #dedede;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background: transparent;
+    margin-right: 4px;
+    transition: ease-out .12s;
+}
+.cancelDeleteTrades:hover {
+    cursor: pointer;
+    background: rgba(255,255,255, .12);
+    color: #fff;
+    transition: ease-in .12s;
+}
+.deleteTradesConfirm {
+    background: rgb(197, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 500;
+}
+.deleteTradesConfirm:hover {
+    cursor: pointer;
+}
+
+// new account form 
+
+.newAccountForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: #31313a;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 99999991;
+    border-radius: 12px;
+}
+.naf-x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: #dedede;
+    border-radius: 55px;
+    background: transparent;
+    font-size: 16px;
+}
+.naf-x:hover {
+    background: rgba(255,255,255, .12);
+    color: #fff;
+    cursor: pointer;
+}
+.naf-hdr {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.naf-msg {
+    font-size: 14px;
+    color: #dedede;
+}
+.naf-name {
+    background: transparent;
+    width: 350px;
+    color: #dedede;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    padding: 3px 6px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.naf-name:focus {
+    border-bottom: 1px solid #1c74e9;
+    outline: none;
+}
+.naf-name-empty {
+    border-bottom: 1px solid red !important;
+}
+.naf-buttonsRow {
+    display: block;
+    text-align: right;
+}
+.naf-saveBtn {
+    color: #fff;
+    background: #1c74e9;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.naf-saveBtn:hover {
+    cursor: pointer;
+}
+.naf-cancelBtn {
+    color: #ededed;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.naf-cancelBtn:hover {
+    cursor: pointer;
+    background: rgba(255,255,255, .12);
+}
+
+// edit account form 
+
+.editAccountForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: #31313a;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 99999991;
+    border-radius: 12px;
+}
+.eaf-x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: #dedede;
+    border-radius: 55px;
+    background: transparent;
+    font-size: 16px;
+}
+.eaf-x:hover {
+    background: rgba(255,255,255, .12);
+    color: #fff;
+    cursor: pointer;
+}
+.eaf-hdr {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.eaf-msg {
+    font-size: 14px;
+    color: #dedede;
+}
+.eaf-name {
+    background: transparent;
+    width: 350px;
+    color: #dedede;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    padding: 3px 6px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.eaf-name:focus {
+    border-bottom: 1px solid #1c74e9;
+    outline: none;
+}
+.eaf-name-empty {
+    border-bottom: 1px solid red !important;
+}
+.eaf-buttonsRow {
+    display: block;
+    text-align: right;
+}
+.eaf-saveBtn {
+    color: #fff;
+    background: #1c74e9;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.eaf-saveBtn:hover {
+    cursor: pointer;
+}
+.eaf-cancelBtn {
+    color: #ededed;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.eaf-cancelBtn:hover {
+    cursor: pointer;
+    background: rgba(255,255,255, .12);
+}
+.eaf-deleteAccountBtn {
+    float: left;
+    color: #dedede;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.eaf-deleteAccountBtn:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+// confirm account delete form
+
+.confirmAccountDeleteForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    width: 380px;
+    background: #31313a;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 99999991;
+    border-radius: 12px;
+}
+.cadf-x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: #dedede;
+    border-radius: 55px;
+    background: transparent;
+    font-size: 16px;
+}
+.cadf-x:hover {
+    background: rgba(255,255,255, .12);
+    color: #fff;
+    cursor: pointer;
+}
+.cadf-hdr {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.cadf-msg, .cadf-name {
+    font-size: 14px;
+    color: #dedede;
+}
+.cadf-confirmInput {
+    background: transparent;
+    width: 350px;
+    color: #dedede;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    padding: 3px 6px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.cadf-confirmInput:focus {
+    border-bottom: 1px solid #1c74e9;
+    outline: none;
+}
+.cadf-confirmInput-err {
+    border-bottom: 1px solid red !important;
+}
+.cadf-buttonRow {
+    display: block;
+    text-align: right;
+}
+.cadf-confirmBtn {
+    color: #fff;
+    background: #1c74e9;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.cadf-confirmBtn:hover {
+    cursor: pointer;
+}
+.cadf-cancelBtn {
+    color: #ededed;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.cadf-cancelBtn:hover {
+    cursor: pointer;
+    background: rgba(255,255,255, .12);
+}
+
+// trade info window
+
+.noticia {
+    font-family: 'Noticia Text', serif !important;
+}
+
+.tradeInfoBackdrop {
+
+}
+.tradeInfoWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.9), 0 15px 12px rgba(0,0,0,0.66);
+    //border-radius: 16px;
+    overflow: hidden;
+}
+.tradeInfoInner {
+    overflow: auto !important;
+    width: 100%;
+    height: 100%;
+}
+.tradingViewChartWidget {
+    height: 80vh;
+    width: 80vw;
+}
+
+
+
+.emptyInputErr {
+    background: rgba(255, 0, 0, .15) !important;
+}
+
+
+
+
+// subscription overlays 
+
+.new-subscription-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, .25);
+    z-index: 9999999;
+}
+.new-subscription-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(139, 139, 139);
+    width: 300px;
+    height: 300px;
+}
+.stripe-checkout-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+// tutorial forms
+
+.demo-form-backdrop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    //background: rgba(255,255,255, .2);
+    background: rgba(0,0,0, .65);
+    z-index: 99999;
+}
+.demo-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #31313a;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 6px;
+    width: 420px;
+}
+.df-title {
+    color: #fff;
+    font-size: 28px;
+}
+.df-msg {
+    color: #dedede;
+}
+.df-btn {
+    float: right;
+    color: #fff;
+    padding: 6px 15px;
+    border: none;
+    background: #1c74e9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tutorial-form {
+    display: none;
+    position: absolute;
+    padding: 12px;
+    width: 300px;
+    color: #fff;
+    background: #1e90ff;
+    z-index: 9999;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.57), 0 6px 6px rgba(0,0,0,0.69);
+}
+.tf-arrow {
+
+}
+.tutorial-form p {
+    
+}
+.tutorial-form button, .dashboard-modal button, .spreadsheet-modal button {
+    float: right;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    background: rgba(255,255,255, .3);
+    cursor: pointer;
+}
+
+.tf-1 {
+    top: 70px;
+    right: 55px;
+}
+.tf-1:after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #1e90ff;
+}
+
+.tf-2 {
+    top: 70px;
+    right: 150px;
+}
+.tf-2:after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #1e90ff;
+}
+
+.dashboard-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 350px);
+    background: rgba(255,255,255, .25);
+    z-index: 999;
+}
+.spreadsheet-overlay {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 350px;
+    background: rgba(255,255,255, .25);
+    z-index: 99999;
+}
+.dashboard-modal, .spreadsheet-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e90ff;
+    padding: 12px;
+    width: 300px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.33);
+}

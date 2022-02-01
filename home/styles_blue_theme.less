@@ -1,0 +1,709 @@
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.innerSec {
+    margin: 0 auto;
+    width: 1300px;
+    position: relative;
+}
+.hpTopShadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    //box-shadow: 0 3px 6px rgba(0,0,0,0.48), 0 3px 6px rgba(0,0,0,0.69);
+    z-index: 9999;
+}
+.hpNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    z-index: 999;
+    transition: ease-in .15s;
+    backdrop-filter: blur(5px);
+}
+.navScroll {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: rgba(255,255,255, .15);
+    transition: ease-out .15s;
+}
+.navControls {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.hpLogo {
+    height: 35px;
+    margin-right: 15px;
+}
+.navBtns {
+    background: transparent;
+    color: #707070;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 9px;
+}
+.authBtnsNav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+////////////////////////////////////////
+
+.apiSection {
+    padding: 80px 0;
+    background-image: linear-gradient(to bottom right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+}
+.apiSecContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+.apiInfoWrap {
+    position: relative;
+    width: 450px;
+    flex-shrinK: 0;
+}
+.apiInfoWrap h2 {
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.apiMsg {
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.apiEndpointHdr {
+    color: #fff;
+    font-weight: 500;
+}
+.apiEndpoint {
+    background: rgba(255,255,255, .15);
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: .7px;
+}
+.apiUsageBtn {
+    display: block;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1a73e8;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: 1px solid #1a73e8;
+    margin-top: 30px;
+}
+.apiUsageBtn:hover {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-color: #185abc;
+}
+.apiUsageBtn:focus {
+    outline: none;
+}
+.apiImgWrap {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.apiImg {
+    //right: -160px; // align right side of screen on innerSec edge
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+///////////////////////////////////////
+
+.spreadsheetSec {
+    background-image: linear-gradient(to top right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+    padding: 100px 0;
+}
+.spreadsheetSecContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+.spreadsheetDescripWrap {
+    padding-left: 95px;
+    position: relative;
+    width: 550px;
+    flex-shrink: 0;
+}
+.spreadsheetDescripWrap h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.spreadsheetMsg {
+    color: #ccc;
+    font-size: 16px;
+}
+.spreadsheetImgWrap {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.spreadsheetImgWrap img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 12px;
+    box-shadow: 0 0 55px 18px rgba(0, 0, 0, .2);
+}
+
+
+
+.homepageWindow {
+    min-height: 100vh;
+    background: #fff;
+}
+.heroSection {
+    //background-image: url('../img/bkg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px 0;
+    background-image: linear-gradient(to bottom left, rgba(41, 121, 241, 0.13), rgba(0,0,0,0));
+    background-color: #000000;
+    background-image: linear-gradient(to bottom right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+}
+.heroSectionContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+.hpIntroWrap {
+    position: relative;
+    width: 450px;
+    flex-shrink: 0;
+    //background: blue;
+}
+.hpIntroWrap h1 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    line-height: 45px;
+    color: #fff;
+}
+.hpMainPara {
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.hpContentBtnsWrap {
+    margin-top: 25px;
+    //text-align: center;
+}
+.desktopImgWrap {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.imgShape1 {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 50%;
+    height: 20%;
+    background: #1e90ff;
+    //background-image: linear-gradient(to bottom, #000, #1a1a1a);
+    z-index: -5;
+    border-radius: 50px;
+}
+.imgShape2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 20%;
+    background: #1ba260;
+    //background-image: linear-gradient(to bottom, #000, #1a1a1a);
+    z-index: -5;
+    border-radius: 15px;
+}
+.desktopImg {
+    //right: -160px; // align right side of screen on innerSec edge
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+////////////////////////
+//////top buttons///////
+////////////////////////
+
+//logins
+.loginBtn {
+    //position: absolute;
+    //top: 15px;
+    //right: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+    background: transparent;
+    padding: 8px 25px;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.loginBtn:hover {
+    background-color: #f4f8fe;
+    border-color: #1a73e8;
+}
+.loginBtn:focus {
+    outline: none;
+}
+.registerBtn {
+    //position: absolute;
+    //top: 15px;
+    //right: 112px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1a73e8;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: 1px solid #1a73e8;
+}
+.registerBtn:hover {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-color: #185abc;
+}
+
+// key metrics section
+
+.keyMetricSection {
+    display: flex;
+    width: 100%;
+    padding: 35px 0 65px 0;
+    background-image: linear-gradient(to top left, rgba(41, 121, 241, 0.13), #000);
+    background-image: linear-gradient(to bottom right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+    //background: #f5f5f5;
+}
+.metricNum {
+    display: none;
+    position: absolute;
+    top: -17px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    //background: green;
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    font-weight: 700;
+}
+.keyMetricsInnerSec h2 {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.metricRow {
+    display: flex;
+    margin-top: 25px;
+}
+.keyMetric {
+    position: relative;
+    padding: 20px 0 23px 0;
+    background: rgba(255,255,255, .15);
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, .4);
+    border-radius: 4px;
+    flex: 1 1 0px;
+    margin: 7px;
+}
+.metricTitle {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    //color: #3d3d3d;
+    white-space: nowrap;
+}
+.metricDescrip {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #dedede;
+}
+
+//return chart section
+.chartsSection {
+    padding: 80px 0;
+    //background-image: linear-gradient(to top left, rgba(41, 121, 241, 0.13), #000);
+    background-image: linear-gradient(to top right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+}
+.chartsInnerSec h2 {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.chartsMsg {
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.chartsWrap {
+    //background: rgba(255,255,255, .17);
+    //background-image: linear-gradient(to bottom, rgba(255,255,255, .17), rgba(255,255,255, .08));
+    background: rgba(255,255,255, .04);
+    //background: #000;
+    padding: 45px 15px 15px 15px;
+    border-radius: 12px;
+    //box-shadow: 0 0 55px 18px rgba(0, 0, 0, .2);
+    //border: 1px solid #707070;
+}
+.returnChartHdrWrap {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    height: 170px;
+    padding-top: 5px;
+}
+.returnChartHdrWrap h3 {
+    color: #fff;
+}
+.returnChartHdr {
+    display: inline-block;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.totalRtrn, .weekRtrn, .monthRtrn {
+    color: lightgreen,
+}
+.dayRtrn {
+    color: red;
+}
+.return_chart {
+    background: transparent;
+    width: 100%;
+    height: 250px;
+}
+.daily_chart {
+    background: transparent;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// chart 1 section
+
+.chart1Section {
+    width: 100%;
+}
+.chart1InnerSec {
+
+}
+.chart1InnerSec img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.chart2Section {
+    width: 100%;
+    margin-top: 75px;
+    padding-bottom: 70px;
+}
+.chart2InnerSec {
+
+}
+.chart2InnerSec img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media only screen and (max-width: 1650px) {
+
+    .innerSec {
+        width: 1200px;
+    }
+
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .innerSec {
+        width: 92%;
+    }
+    .hpIntroWrap {
+        width: 400px;
+    }
+
+    /*
+    .heroSectionContent {
+        display: block;
+    }
+    .hpIntroWrap {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .desktopImgWrap {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        margin-top: 45px;
+    }
+    */
+
+}
+
+@media only screen and (max-width: 1025px) {
+    .heroSectionContent {
+        display: block;
+    }
+    .hpIntroWrap {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    h1 > br {
+        display: none;
+    }
+    .desktopImgWrap {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .authBtnsNav {
+        display: none;
+    }
+    .hpIntroWrap {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px !important;
+        font-weight: 400 !important;
+    }
+    .desktopImgWrap {
+        margin-top: 55px;
+    }
+    .keyMetricSection {
+        text-align: center;
+        display: block;
+    }
+    .keyMetric {
+        width: 95%;
+        margin: 0 0 15px 0;
+    }
+}
+
+
+
+
+
+
+
+// scrollbar
+
+.os-scrollbar-handle {
+    background: rgba(102, 102, 133, .5) !important;
+    cursor: default !important;
+}
+.os-scrollbar-track {
+    //background: transparent !important;
+}
+.os-scrollbar-vertical {
+    //background: rgba(16, 16, 26, .6) !important;
+    border-right: .5px solid rgba(255,255,255, .24);
+    //border-left: .5px solid rgba(255,255,255, .24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.loginForm {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background: #2a2e3b;
+    padding: 20px 20px 10px 20px;
+    border-radius: 4px;
+}
+.loginForm label {
+    display: block;
+    color: #dedede;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-indent: 3px;
+}
+.loginForm label > input {
+    display: block;
+    background: #1b1e26;
+    color: #ededed;
+    border: 1px solid rgba(255,255,255, .15);
+    border-radius: 4px;
+    padding: 4px;
+    width: 200px;
+    margin-top: 4px;
+}
+.loginFormBtnsWrap {
+    text-align: right;
+    margin-top: 20px;
+}
+.loginSubmit {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1c74e9;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.loginCancel {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #dedede;
+    background: transparent;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+// signups
+.registerForm {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 112px;
+    background: #2a2e3b;
+    padding: 20px 20px 10px 20px;
+    border-radius: 4px;
+}
+.registerForm label {
+    display: block;
+    color: #dedede;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-indent: 3px;
+}
+.registerForm label > input {
+    display: block;
+    background: #1b1e26;
+    color: #ededed;
+    border: 1px solid rgba(255,255,255, .15);
+    border-radius: 4px;
+    padding: 4px;
+    width: 200px;
+    margin-top: 4px;
+}
+.registerSubmit {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1c74e9;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.registerCancel {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #dedede;
+    background: transparent;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+/////////
+
+*/

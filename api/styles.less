@@ -1,0 +1,228 @@
+// api window 
+
+body {
+    background: #0d0d13 !important;
+}
+.apiWindow {
+    display: block;
+    margin: 0 auto;
+    width: 740px;
+    min-height: 100vh;
+    overflow-y: auto;
+    z-index: 99999;
+    overflow: visible;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 14px 28px rgb(0 0 0 / 87%), 0 10px 10px rgb(0 0 0 / 77%);
+    padding: 20px;
+    border-bottom: none;
+    border-top: none;
+}
+.apiEndpointWrap, .apiKeyWrap {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.accountSelectWrap {
+    float: right;
+    margin-top: 14px;
+}
+.accountSelect {
+    width: 180px;
+    margin-left: 25px;
+}
+.nice-select {
+    height: 30px;
+    line-height: 30px;
+    color: #535353;
+}
+.list {
+    min-width: 100%;
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background: rgba(255,255,255, .15);
+}
+.option.disabled {
+    display: none;
+}
+.sectionHdr {
+    text-align: left !important;
+    color: #ededed;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.parameterHdrWrap {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.parameterHdrWrap:hover, .parameterHdrOpen {
+    background: rgba(0,0,0, .03);
+}
+.parameterHdrOpen {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.23);
+}
+.parameterHdrOpen {
+    transition: ease-out .15s;
+}
+.parameterHdr {
+    color: #dedede;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.sectionChevron {
+    margin-left: auto;
+    color: #888888;
+    font-size: 12px;
+}
+.parameterSection {
+    overflow: hidden;
+    background: rgba(255,255,255, .04);
+    border-radius: 10px;
+}
+.sectionWrap:not(:first-child) {
+    border-top: 1px solid rgba(0,0,0, .1);
+}
+.sectionContent {
+    display: none;
+    padding: 20px;
+}
+.columnSortValues {
+    height: 300px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.apiJsSampleRequest, .apiJqSampleRequest, .apiSampleResponse, .codeSample {
+    display: block;
+    padding: 10px;
+    background: rgba(0,0,0, .2);
+    color: #ccc;
+    text-align: left;
+    //border: 1px solid rgb(54, 54, 54) !important;
+}
+.apiSampleResponse {
+    margin-bottom: 0 !important;
+}
+.exHdr {
+    color: #ccc;
+    margin-top: 16px;
+    font-size: 14px;
+}
+.apiPoints {
+    color: #1e90ff !important;
+}
+.apiParamMsg {
+    color: #ccc;
+    text-align: left;
+    font-size: 16px;
+}
+.apiParamMsg span {
+    padding: 5px;
+    background: rgba(0,0,0, .3);
+    color: rgb(218, 218, 218);
+    text-align: left;
+}
+.apiSortValues {
+    height: 200px;
+    overflow: auto;
+}
+.columnSortValues p {
+    letter-spacing: .6px;
+}
+.columnSortValues p > span {
+    font-weight: 500;
+}
+
+.apiSampleRequestWrap {
+    margin-top: 15px;
+}
+.rateLimitMsg {
+    display: none;
+    color: rgb(27, 27, 27);
+    font-size: 14px;
+}
+.reqCodeType {
+    border: none;
+    background: rgba(255,255,255,.07);
+    border-radius: 4px;
+    color: #ccc;
+    padding: 5px 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: ease-in .15s;
+}
+.reqCodeType:not(.actExBtn):hover {
+    background: rgba(255,255,255, .15);
+    transition: ease-out .15s;
+    cursor: pointer;
+}
+.reqCodeType:focus {
+    outline: none;
+}
+.actExBtn {
+    background: #4285f4;
+    color: #fff;
+    cursor: pointer;
+}
+.apiSampleResponseWrap {
+    margin-top: 15px;
+}
+.apiJqSampleRequest {
+    display: none;
+}
+
+
+//pretty print classes -- syntax highlighting
+
+.pln, .pun {
+    color: #ccc !important;
+}
+.kwd {
+    color: #00ebcb !important;
+}
+.str {
+    color: #399cff !important;
+}
+.typ, .lit {
+    color: gray !important;
+}
+.com {
+    color: rgba(255,255,255, .25) !important;
+}
+
+// font awesome
+
+.chevronDown{
+    position:relative;
+    display:block;
+    height:50px;/*height should be double border*/
+}
+.chevronDown:before,
+.chevronDown:after{
+    position:absolute;
+    display:block;
+    content:"";
+    border:25px solid transparent;/*adjust size*/
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+.chevronDown:before{
+    top:0;
+    border-top-color:#fff;/*chevronDown Color*/
+}
+.chevronDown:after{
+    top:-10px;/*adjust thickness*/
+    border-top-color:#fff;/*Match background colour*/
+}
+
+// overlay scrollbars
+
+.os-scrollbar-handle {
+    background: rgba(112, 112, 112, 0.5) !important;
+    cursor: default !important;
+}

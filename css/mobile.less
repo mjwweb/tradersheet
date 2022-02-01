@@ -1,0 +1,188 @@
+.accountMobileSelect {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-radius: 55px;
+}
+.accountMobileSelect i {
+    color: rgba(255,255,255, .5);
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 1170px) {
+    .metricsWrap {
+        display: none;
+        position: absolute;
+        float: none;
+        top: 45px;
+        left: 15px;
+        background: #2a2e3b;
+        padding: 5px 25px 25px 25px;
+        border-radius: 8px;
+        border: 1px solid #575757;
+        border-top: none;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.44);
+        z-index: 998;
+    }
+    .keyMetric {
+        display: block;
+        margin-left: -10px;
+    }
+    .metricsBtn {
+        display: block;
+        float: left;
+        margin-left: 15px;
+        margin-top: 9px;
+        color: #dedede;
+        border: none;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid transparent;
+        font-size: 14px;
+        padding: 4px 9px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .metricsBtn:focus, .metricsBtnFocus {
+        outline: none;
+        background: #2a2e3b;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .dashboardLeft {
+        display: none;
+    }
+    .returnChartsWrap {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 781px) {
+    .keyMetricSection {
+        display: none !important;
+    }
+    .returnChartHdrWrap {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    body {
+        overflow: auto;
+    }
+
+    // charts and main window 
+
+    .topWindowWrap {
+        height: calc(100vh - 350px);
+    }
+    .bottomWindowWrap {
+        height: 100vh;
+    }
+    .plChartWrap {
+        padding-top: 55px;
+    }
+    .returnChartHdrWrap {
+        left: 15px;
+    }
+    .returnChartHdrWrap h3 {
+        display: block;
+    }
+    .returnChartHdr {
+        margin-right: 2px;
+    }
+    .returnChartHdr, .dailyReturnChartHdr {
+        font-size: 14px;
+    }
+    .apexcharts-toolbar {
+        display: none !important;
+        top: -44px !important;
+    }
+
+    //add trade form 
+
+    .addTradeForm {
+        background: #000;
+        text-align: center;
+        top: 0 !important;
+        left: 0;
+        padding: 25px;
+        border: none !important;
+        border-radius: 0 !important;
+        width: 100vw !important;
+        height: 100vh;
+    }
+    .tradeFormHdrWrap {
+        display: block !important;
+    }
+    .tradeFormHdrWrap p {
+        text-align: center;
+        color: #ededed;
+        font-size: 32px;
+        padding: 35px 0 25px 0;
+    }
+    .tradeFormRow {
+        margin-bottom: 35px;
+    }
+    .tradeFormBtmRow {
+        display: block;
+        margin-top: 15px;
+    }
+    .tradeFormBtmRow label {
+        text-align: left !important;
+    }
+    .atfBtnsWrap {
+        display: flex;
+        margin-top: 25px;
+    }
+    .atfBtnsWrap button {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: 5px;
+        padding: 8px 0;
+    }
+    .cancelNewTrade {
+        background: rgba(255,255,255, .1) !important;
+    }
+    .atfInput, .atfInputInac {
+        background: rgba(255,255,255, .08) !important;
+    }
+    .atfInputInac {
+        border: none !important;
+    }
+    .lsTog {
+        background: rgba(255,255,255, .08) !important;
+    }
+
+    // trade notes
+
+    .tradeNotesHolder {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+
+    // account dropdown
+
+    #addTradeBtn {
+        //right: 90px;
+    }
+    #accountDropdownWrap {
+        //display: none;
+    }
+    .accountMobileSelect {
+        //display: block;
+    }
+}

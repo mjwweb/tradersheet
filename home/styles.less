@@ -1,0 +1,1096 @@
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif !important;
+    color: #535353;
+}
+h2 {
+    font-size: 36px !important;
+    letter-spacing: 2px !important;
+    font-weight: 400 !important;
+}
+a {
+    color: #1a73e8 !important;
+}
+a:hover {
+    color: #1a73e8 !important;
+}
+.altBkg {
+    background: #f4f7fe !important;
+}
+
+.innerSec {
+    margin: 0 auto;
+    width: 1400px;
+    position: relative;
+}
+.hpTopShadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    //box-shadow: 0 3px 6px rgba(0,0,0,0.48), 0 3px 6px rgba(0,0,0,0.69);
+    z-index: 9999;
+}
+.hpNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    z-index: 999;
+    background: rgba(255,255,255, .2);
+    transition: ease-in .15s;
+}
+.navScroll {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #fff;
+    transition: ease-out .15s;
+}
+.navControls {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.hpLogo {
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.navBtns {
+    background: transparent;
+    color: #535353;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-left: 5px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.navBtns:hover {
+    background: rgba(0,0,0, .05);
+    color: #000;
+    cursor: pointer;
+}
+.navBtns:focus {
+    outline: none;
+}
+.authBtnsNav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+////////////////////////////////////////
+
+.apiSection {
+    padding: 70px 0;
+    //background-image: url('img/api.png'), linear-gradient(#f4f7fe, #f4f7fe);
+    background: #f4f7fe;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.apiSecContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+.apiInfoWrap {
+    position: relative;
+    width: 450px;
+    flex-shrinK: 0;
+    margin-top: 30px;
+}
+.apiInfoWrap h2 {
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+.apiMsg {
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+.apiEndpointHdr {
+    font-weight: 500;
+}
+.apiEndpoint {
+    background: rgba(0,0,0, .07);
+    background: #fff;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: .7px;
+    width: 440px;
+}
+.apiUsageBtn {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1a73e8;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: 1px solid #1a73e8;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+.apiUsageBtn:hover {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-color: #185abc;
+}
+.apiUsageBtn:focus {
+    outline: none;
+}
+.discordBtn {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    //color: #1a73e8;
+    //border: 1px solid #1a73e8;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+    background: transparent;
+    padding: 8px 25px;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.tradeObject {
+    border-radius: 12px;
+    border: none !important;
+    font-size: 16px;
+    background: rgb(15, 15, 15);
+    background: #fff;
+    min-width: 320px;
+}
+.tradeObjectHdr {
+    font-size: 18px;
+    color: rgba(0,0,0, .7);
+}
+///////////////////////////////////////
+
+.featuresSection {
+    //background-image: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url('img/apiBkg.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.featuresHdr {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.featuresHdrMsg {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    color: #ccc;
+    font-size: 22px;
+    text-align: center;
+    width: 70%;
+    font-weight: 300;
+}
+.apiFeatureWrap {
+    //flex-grow: 1;
+    text-align: center;
+}
+.apiFeatureIcon {
+    position: relative;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+.apiFeatureIcon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 32px;
+}
+
+.keysapiFeatureWrap i {
+    //background-image: linear-gradient(to bottom, rgb(41, 133, 255), rgba(41, 133, 255, .5));
+}
+.chartFeaturesWrap i {
+    //background-image: linear-gradient(to bottom, rgb(240, 128, 128), rgba(240, 128, 128, .5));
+}
+.pricesapiFeatureWrap i {
+    //background-image: linear-gradient(to bottom, rgb(144, 238, 144), rgba(144, 238, 144, .5));
+}
+.featureHdr {
+    font-size: 22px;
+    color: rgba(0,0,0, .7);
+    margin-bottom: 5px;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+}
+.featureMsg {
+    color: rgba(0,0,0, .6);
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.chartFeaturesWrap {
+
+}
+.githubBtnWrap {
+    display: block;
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+}
+.githubBtn {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #dedede;
+    border: 1px solid rgb(163, 163, 163);
+    background: transparent;
+    padding: 8px 25px;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.githubBtn:hover {
+    background: rgba(255,255,255, .1);
+}
+.githubBtn i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+//////////////////////////////////////
+
+/* trading view charts section */
+
+.tradingViewSection {
+    padding: 100px 0;
+}
+.tradingview-widget-container {
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 35px 5px rgba(0,0,0, .3);
+}
+
+.spreadsheetSec {
+    padding: 100px 0;
+}
+.spreadsheetSecContent {
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    //flex-wrap: wrap;
+    //height: auto;
+}
+.spreadsheetDescripWrap {
+    position: relative;
+    flex-shrink: 0;
+}
+.spreadsheetDescripWrap h2 {
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.spreadsheetMsg {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.spreadsheetImgWrap img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 12px;
+    box-shadow: 0 0 55px 18px rgba(0, 0, 0, .3);
+}
+
+
+.tradeNotesSection {
+    //background-image: url('../img/bkg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px 0;
+    background-image: linear-gradient(to bottom left, rgba(41, 121, 241, 0.13), rgba(0,0,0,0));
+    background-color: #000000;
+    background-image: linear-gradient(to bottom right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+    background: transparent;
+}
+.tradeNotesContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+.tradeNotesInfoWrap {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.tradeNotesInfoWrap h2 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.tradeNotesMsg {
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.tradeNotesImgWrap {
+    position: relative;
+    width: 500px;
+}
+.tradeNotesImgWrap img {
+    width: 100%;
+}
+
+
+.homepageWindow {
+    min-height: 100vh;
+    background: #fff;
+}
+.heroSection {
+    background-image: url('img/bkg1.png');
+    //background-image: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, .8));
+    //background: #fff;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 120px 0 100px 0;
+    //background: transparent;
+}
+h1 {
+    display: block !important;
+    margin-bottom: 35px !important;
+    font-size: 32px;
+}
+.heroSectionLeft {
+
+}
+.heroMsg {
+    line-height: 28px;
+    font-size: 18px;
+}
+.heroSectionRight {
+
+}
+.heroSectionRight img {
+
+}
+.authBtnsHero {
+    margin-top: 35px;
+}
+
+// intro section
+
+.introSec {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, #fff, #f4f7fe, #f4f7fe, #f4f7fe);
+}
+.introSecBoxWrap {
+    display: flex;
+}
+.introSecHdr {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.introSecMsg {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+.introSecBox {
+    padding: 35px 45px;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-top: 4px solid #1e90ff;
+}
+.introSecBox:first-child {
+    margin-left: 0;
+}
+.introSecBox:last-child {
+    margin-right: 0;
+}
+.introSecBox i {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    color: #1e90ff;
+}
+.introBoxHdr {
+    text-align: center;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.introBoxMsg {
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+// features section
+
+.features-section {
+    padding: 100px 0 25px 0;
+}
+.featuresHdr {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.feature-box {
+    display: flex;
+    margin-bottom: 75px;
+}
+.feature-box i {
+    font-size: 48px;
+    margin-right: 20px;
+    color: gray !important;
+}
+.feature-content h3 {
+    font-size: 24px;
+}
+.feature-content p {
+    margin-bottom: 0;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+// random section
+
+.randSec {
+    padding: 100px 0 0 0;
+    background-image: url('img/bkgWave1.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.spreadsheet-sec {
+    margin-bottom: 222px;
+}
+.featureChecksWrap {
+    display: block;
+    font-size: 16px;
+    margin-top: 35px;
+}
+.featureChecksRow {
+    margin-bottom: 8px;
+}
+.featureCheck {
+    color: #1e90ff;
+    margin-right: 10px;
+}
+
+////////////////////////
+//////top buttons///////
+////////////////////////
+
+//logins
+.loginBtn, .dashboardBtn {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    //color: #1a73e8;
+    //border: 1px solid #1a73e8;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+    background: transparent;
+    padding: 8px 25px;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.loginBtn:hover, .dashboardBtn:hover {
+    background: rgba(255,255,255, .1);
+}
+.registerBtn {
+    position: relative;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1a73e8;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: 1px solid #1a73e8;
+}
+.registerBtn:hover {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-color: #185abc;
+}
+
+// key metrics section
+
+.keyMetricSection {
+    padding: 35px 0 65px 0;
+    width: 500px;
+    //background: transparent;
+    //background: #f5f5f5;
+}
+.metricNum {
+    display: none;
+    position: absolute;
+    top: -17px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    //background: green;
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    font-weight: 700;
+}
+.keyMetricsInnerSec h2 {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+    margin: 35px 0;
+}
+.keyMetric {
+    position: relative;
+    padding: 20px 0 23px 0;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.keyMetric i {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 12px;
+    padding-top: 16px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #fff;
+}
+.metricTitle {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #535353;
+    //color: #3d3d3d;
+    white-space: nowrap;
+}
+.metricDescrip {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+//return chart section
+
+.chartsSection {
+    padding: 100px 0;
+    //background-image: linear-gradient(to top left, rgba(41, 121, 241, 0.13), #000);
+    background-image: linear-gradient(to bottom right, #000000 0%, rgba(4, 97, 159, .5) 98%);
+    background: transparent;
+    //background: transparent;
+}
+.chartsInnerSec h2 {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.chartsMsg {
+    display: block;
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.chartsWrap {
+    //background: rgba(255,255,255, .17);
+    background-image: linear-gradient(to bottom, rgba(255,255,255, .0), rgba(255,255,255, .09));
+    //background: rgba(255,255,255, .06);
+    //background: #000;
+    padding: 45px 15px 15px 15px;
+    border-radius: 12px;
+    background: #0e0e15;
+    //background-image: linear-gradient(to right, #000, #0e0e15, #000);
+    //box-shadow: 0 0 55px 18px rgba(0, 0, 0, .2);
+    //border: 1px solid #707070;
+}
+.returnChartHdrWrap {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    height: 170px;
+    padding-top: 5px;
+}
+.returnChartHdrWrap h3 {
+    color: #fff;
+}
+.returnChartHdr {
+    display: inline-block;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.totalRtrn, .weekRtrn, .monthRtrn {
+    color: lightgreen,
+}
+.dayRtrn {
+    color: red;
+}
+.return_chart {
+    background: transparent;
+    width: 100%;
+    height: 250px;
+}
+.daily_chart {
+    background: transparent;
+    width: 100%;
+    height: 100px;
+}
+
+// chart sample section
+
+.apiChartSampleSection {
+    display: none;
+    width: 100%;
+    padding: 100px 0;
+}
+.apiChartRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apiChartWrap {
+    margin: 15px;
+    flex-grow: 1;
+    height: 400px;
+    background: #0e0e15;
+    border-radius: 12px;
+}
+.apiChartWrap:first-child {
+    margin-left: 0;
+}
+.apiChartWrap:last-child {
+    margin-right: 0;
+}
+
+// footer section 
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: rgb(31, 31, 31);
+}
+.footerContent {
+    display: flex;
+    padding-top: 17px;
+}
+.footerLogo {
+    width: 200px;
+    margin-right: 25px;
+}
+.footerBtn {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    color: rgb(168, 168, 168);
+    margin-left: 7px;
+    font-family: 'Poppins', sans-serif !important;
+    transition: ease-in .15s;
+}
+.footerBtn:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: ease-out .15s;
+}
+.footerBtn:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// chart 1 section
+
+.chart1Section {
+    width: 100%;
+}
+.chart1InnerSec {
+
+}
+.chart1InnerSec img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.chart2Section {
+    width: 100%;
+    margin-top: 75px;
+    padding-bottom: 70px;
+}
+.chart2InnerSec {
+
+}
+.chart2InnerSec img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media only screen and (max-width: 1650px) {
+
+    .innerSec {
+        width: 1200px;
+    }
+
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .innerSec {
+        width: 92%;
+    }
+    .hpIntroWrap {
+        width: 400px;
+    }
+    .heroSectionLeft {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1025px) {
+    .heroSectionContent {
+        display: block;
+    }
+    .hpIntroWrap, .apiInfoWrap {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    h1 > br {
+        display: none;
+    }
+
+    .apiImgWrap {
+        display: none;
+    }
+    .spreadsheetSec, .featuresSection {
+        background: transparent;
+    }
+    .featuresSection, .spreadsheetSec {
+        background: #0e0e15;
+    }
+    .apiSection {
+        background: #f4f7fe;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .authBtnsNav {
+        display: none;
+    }
+    .hpIntroWrap {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px !important;
+        font-weight: 400 !important;
+    }
+    .keyMetricSection {
+        text-align: center;
+        display: block;
+    }
+    .keyMetric {
+        width: 95%;
+        margin: 0 0 15px 0;
+    }
+}
+
+
+
+
+
+
+
+// scrollbar
+
+.os-scrollbar-handle {
+    background: rgba(102, 102, 133, .5) !important;
+    cursor: default !important;
+}
+.os-scrollbar-track {
+    //background: transparent !important;
+}
+.os-scrollbar-vertical {
+    //background: rgba(16, 16, 26, .6) !important;
+    border-right: .5px solid rgba(255,255,255, .24);
+    //border-left: .5px solid rgba(255,255,255, .24);
+}
+
+
+//apec charts 
+
+.apexcharts-tooltip {
+    background: #000 !important;
+    border: 1px solid rgba(255,255,255, .35) !important;
+    box-shadow: none !important;
+}
+.apexcharts-tooltip-title {
+    background: rgb(39, 39, 39) !important;
+    border: none !important;
+    margin: 0 !important;
+    color: #fff !important;
+    overflow: hidden !important;
+}
+.apexcharts-tooltip-series-group {
+    background: rgb(58, 58, 58) !important;
+    color: #dedede !important;
+    overflow: hidden !important;
+}
+.apexcharts-yaxistooltip, .apexcharts-xaxistooltip {
+    background: rgb(39, 39, 39) !important;
+    color: #ededed !important;
+    border: 1px solid rgba(255,255,255, .35) !important;
+}
+.apexcharts-yaxistooltip-left:before, .apexcharts-yaxistooltip-left:after {
+    border-left-color: rgb(104, 104, 104) !important;
+}
+.apexcharts-xaxistooltip-bottom:before, .apexcharts-xaxistooltip-bottom:after {
+    border-bottom-color: rgb(104, 104, 104) !important;
+}
+
+//pretty print classes -- syntax highlighting
+
+.pln, .pun {
+    color: #535353 !important;
+}
+.kwd {
+    color: #35ffe4 !important;
+}
+.str {
+    color: #1e90ff !important;
+}
+.typ, .lit {
+    color: gray !important;
+}
+.com {
+    color: rgba(255,255,255, .25) !important;
+}
+
+.mobileLp {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        display: none;
+    }
+    .mobileLp {
+        display: block;
+    }
+    .hpLogoMobile {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        margin-top: 35vh;
+    }
+    .mobileMsg {
+        text-align: center;
+        color: #a3a3a3;
+        font-size: 18px;
+        margin-top: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.loginForm {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background: #2a2e3b;
+    padding: 20px 20px 10px 20px;
+    border-radius: 4px;
+}
+.loginForm label {
+    display: block;
+    color: #dedede;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-indent: 3px;
+}
+.loginForm label > input {
+    display: block;
+    background: #1b1e26;
+    color: #ededed;
+    border: 1px solid rgba(255,255,255, .15);
+    border-radius: 4px;
+    padding: 4px;
+    width: 200px;
+    margin-top: 4px;
+}
+.loginFormBtnsWrap {
+    text-align: right;
+    margin-top: 20px;
+}
+.loginSubmit {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1c74e9;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.loginCancel {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #dedede;
+    background: transparent;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+// signups
+.registerForm {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 112px;
+    background: #2a2e3b;
+    padding: 20px 20px 10px 20px;
+    border-radius: 4px;
+}
+.registerForm label {
+    display: block;
+    color: #dedede;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-indent: 3px;
+}
+.registerForm label > input {
+    display: block;
+    background: #1b1e26;
+    color: #ededed;
+    border: 1px solid rgba(255,255,255, .15);
+    border-radius: 4px;
+    padding: 4px;
+    width: 200px;
+    margin-top: 4px;
+}
+.registerSubmit {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #1c74e9;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.registerCancel {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #dedede;
+    background: transparent;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+/////////
+
+*/
+
+button:focus {
+    outline: none !important;
+}

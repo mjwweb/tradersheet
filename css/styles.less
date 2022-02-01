@@ -1,0 +1,1017 @@
+.testDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50vh;
+    overflow: auto;
+    background: #fff;
+    z-index: 999999999
+}
+.frostedPanel {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    z-index: 999;
+    background: #fff;
+    backdrop-filter: blur(45px);
+    border-radius: 8px;
+}
+.topBar {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    background: rgba(255,255, 255, .15);
+    background: #1c1c29;
+    border: 6px solid #000;
+    border-bottom: none;
+}
+.apiMenuTog {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    border: none;
+    background: transparent;
+    color: #ccc;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.apiMenuTog:hover {
+    background: rgba(255,255,255, .07);
+}
+.returnChartHdrWrap {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    height: 170px;
+    padding-top: 5px;
+}
+.returnChartSpans {
+    display: inline-block;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 15px;
+}
+#settingsBtn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-radius: 55px;
+    font-size: 20px;
+}
+#settingsBtn i {
+    color: rgba(255,255,255, .5);
+    padding-top: 5px;
+}
+#settingsBtn:hover, .settingsBtnAct {
+    background: rgba(255,255,255, .12) !important;
+    cursor: pointer;
+}
+#settingsBtn:focus {
+    outline: none;
+}
+#logoutBtn {
+    float: right;
+    margin-top: 9px;
+    margin-right: 8px;
+    color: #dedede;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255,255,255, .08);
+    font-size: 14px;
+    padding: 4px 9px;
+    cursor: pointer;
+    transition: ease-in .15;
+}
+.refreshChartBtn {
+    display: none;
+    background: rgba(28, 116, 233, .2);
+    border: none;
+    border-radius: 55px;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 9px;
+}
+.refreshChartBtn i {
+    text-align: center;
+    font-size: 14px;
+    color: #1c74ef;
+}
+.refreshChartBtn:hover {
+    background: rgba(28, 116, 233, .3);
+    cursor: pointer;
+}
+.refreshChartBtn:focus {
+    outline: none;
+}
+.bottomWindowWrap {
+    width: 100%;
+    display: block;
+    height: 350px;
+    border: 6px solid #000;
+    overflow-x: auto;
+    z-index: 999;
+}
+.ssFullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+}
+.tradeLogWrapper {
+    position: relative;
+    display: block;
+    height: 100%;
+    min-width: 1700px;
+}
+.tradeLogHdr {
+    position: relative;
+    width: auto;
+    height: 40px;
+    background-image:linear-gradient(rgb(47, 47, 66) , rgba(26, 26, 39, .8));
+    background: #1c1c29;
+    padding: 5px 0 0 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+    border-bottom: 1px solid rgb(94, 94, 94);
+    z-index: 2 !important;
+}
+.tradeLogHdrDflt {
+    display: flex;
+}
+.tradeLogHdrErrs {
+    display: none;
+}
+.errLogBack {
+    float: left;
+    border: none;
+    background: transparent;
+}
+.errLogBack i {
+    --fa-primary-opacity: 1;
+    --fa-secondary-opacity: 1;
+    --fa-primary-color: #fff;
+    --fa-secondary-color: #1c74e9;
+    font-size: 22px;
+    margin-top: 4px;
+}
+.tradeLogHdrRight {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+
+// filter by symbol input
+.srchSymWrap {
+    position: absolute;
+    top: 6px;
+    left: 25px;
+    //display: none;
+    margin-left: 10px;
+}
+.srchSymInner {
+    position: relative;
+    width: 200px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    cursor: text;
+}
+.srchSymInner:hover {
+    background: #32323a;
+}
+.srchSymBox {
+    position: relative;
+    height: auto;
+}
+.srchSymWrap i {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    padding-left: 8px;
+    font-size: 12px;
+    color: #dedede;
+}
+.srchSymInpt {
+    display: inline-block;
+    width: calc(100% - 30px);
+    height: 25px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.srchSymInpt::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: none;
+}
+.srchSymInpt:focus {
+    outline: none;
+}
+.srchSymFocus {
+    background: #32323a;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+    border: 1px solid rgba(255,255,255, .15);
+}
+.srchSymBottom {
+    display: none;
+    max-height: 200px;
+    overflow: auto;
+}
+.srchSymRslts {
+    width: calc(100% - 12px);
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255, .2);
+    margin-top: 4px;
+    cursor: pointer;
+}
+.srchSymRslts p {
+    width: calc(100% + 12px);
+    margin-left: -6px;
+    color: #ededed;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 6px;
+    text-transform: uppercase;
+}
+.srchSymRslts p:hover {
+    background: rgba(255,255,255, .08);
+}
+
+// delete trades button
+
+.deleteTradesBtn {
+    display: none;
+    background: rgb(197, 0, 0);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.deleteTradesBtn span {
+    color: red;
+    font-size: 14px;
+}
+.deleteTradesBtn:hover {
+    background: red;
+    cursor: pointer;
+}
+
+//spreadsheet fullscreen button
+
+.ssFullscreenBtn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    padding-top: 3px;
+    color: #ededed;
+    border-radius: 55px;
+    border: none;
+    font-size: 16px;
+}
+.ssFullscreenBtn:hover, .ssFullscreenBtnAct {
+    cursor: pointer;
+    background: rgba(255,255,255, .12);
+}
+.ssFullscreenBtn:focus {
+    outline: none;
+}
+
+//add trade button
+
+#addTradeBtn {
+    position: absolute;
+    top: 8px;
+    right: 50px;
+    color: #fff;
+    background: #1c74e9;
+    padding: 0 8px;
+    height: 30px;
+    border: 1px solid #1c74e9;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+    cursor: pointer;
+    transition: ease-in .15s;
+}
+#addTradeBtn:hover {
+    background: rgba(28, 116, 233, 1);
+    transition: ease-out .15s;
+}
+#addTradeBtn:focus {
+    outline: none;
+}
+
+// account dropdown
+
+#accountDropdownWrap {
+    position: absolute;
+    top: 8px;
+    right: 150px;
+    padding: 0 10px;
+    min-height: 30px;
+    min-width: 200px;
+    background: #272731;
+    border: 1px solid rgba(255,255,255, .2);
+    margin-right: 15px;
+    border-radius: 4px;
+    transition: ease-in .15s;
+    z-index: 9999;
+}
+#accountDropdownWrap:hover, .accountDropdownActive {
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255, .4) !important;
+    box-shadow: 0 14px 28px rgba(0,0,0, 50%), 0 10px 10px rgba(0,0,0, 44%);
+    transition: ease-out .15s;
+}
+.accountDropdownInner {
+    display: flex;
+}
+.activeAccount {
+    color: #dedede;
+    font-size: 14px;
+    flex-grow: 1;
+    //background: yellow;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.accountDropdownArrow {
+    color: rgba(255,255,255, .25);
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.accountDropdownResultsWrap {
+    display: none;
+    //display: block;
+    border-top: 1px solid rgba(255,255,255, .12);
+}
+.accountDropdownResultRow, .addAccountBtn {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    padding: 0 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accountDropdownResultRow span, .addAccountBtn span {
+    flex-grow: 1;
+    color: #dedede;
+    font-size: 14px;
+}
+.accountDropdownResultRow:hover, .addAccountBtn:hover {
+    background: rgba(255,255,255, .08);
+}
+.editAccountBtn {
+    color: #dedede;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+}
+.editAccountBtn:hover {
+    background: rgba(255,255,255, .12);
+    color: #fff;
+}
+.addAccountBtn i {
+    color: lightgreen;
+    margin-right: 8px;
+}
+
+//chart error icon
+
+.chartErrIcon {
+    display: none;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 11px;
+}
+.chartErrIcon i {
+    --fa-primary-opacity: 1;
+    --fa-secondary-opacity: 1;
+    --fa-primary-color: rgb(0, 0, 0);
+    --fa-secondary-color: yellow;
+}
+.chartErrIcon:hover {
+    background: rgba(255,255,255, .12);
+    cursor: pointer;
+}
+.chartErrIcon:focus {
+    outline: none;
+}
+.chartErrIconFocus {
+    background: rgba(255,255,255, .12);
+}
+
+// chart error window 
+
+.chartErrs {
+    display: none;
+    position: absolute;
+    right: 100px;
+    width: 350px;
+    background: #222231;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255, .15);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 6px rgba(0,0,0,0.46);
+}
+.chartErrs p {
+    color: #fff;
+}
+.chartErrsTop {
+    background: rgba(0,0,0, .15);
+    border-bottom: 1px solid rgba(255,255,255, .15);
+    padding: 6px 10px;
+}
+.chartErrsTop span {
+    color: #fff;
+    font-size: 16px;
+}
+.showTradeErrs {
+    background: transparent;
+    color: #0d96ff;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 6px;
+    text-align: right;
+    font-size: 14px;
+    float: right;
+}
+.showTradeErrs:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.chartErrsData {
+    padding: 10px;
+}
+
+.tradeTargetsWrapper {
+    position: relative;
+    //display: block;
+    display: none;
+    height: calc(40vh - 25px); // 35vh - half of top bar
+    overflow: auto;
+    width: 100%;
+    background: #313844;
+    background: rgba(16, 16, 26, .6);
+    overflow: auto;
+    overflow-y: auto;
+    border-left: 4px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+.tradeTargetsSheet {
+    overflow: auto;
+    height: calc(100% - 40px);
+}
+.logTogBtns {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 14px;
+    background: rgba(255,255,255, .1);
+    color: #fff;
+    border: none;
+    border-radius: 55px;
+    margin-right: 7px;
+    margin-top: 3px;
+    cursor: pointer;
+    vertical-align: top;
+}
+.logTogBtns:focus {
+    outline: none;
+}
+.logTogBtns:not(.actLogBtn):hover {
+    background: rgba(255,255,255, .2);
+}
+.actLogBtn {
+    background: #1c74e9 !important;
+}
+
+.cancelNoteBtn {
+    background: rgba(255,255,255, .08);
+    color: #dedede;
+    border-radius: 4px;
+    border: none;
+    padding: 0 4px;
+}
+.saveNoteBtn {
+    background: #1c74e9;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    margin-right: 5px;
+    padding: 0 8px;
+}
+
+
+
+
+
+
+
+
+.topWindowWrap {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 400px); // 100vh minus spreadhseeet height (350px) and top navbar height (50px)
+}
+.tradeNotesHolder {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 550px;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.60), 0 15px 12px rgba(0,0,0,0.44);
+    //background-color: rgba(21, 21, 31, .2);
+    //backdrop-filter: blur(45px);
+    //opacity: 0;
+    transform: scale(.85);
+    transition: transform .15s, opacity .15s;
+}
+.animateTradeNotes {
+    opacity: 1;
+    transform: scale(1);
+}
+.tradeNotesWrap {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px);
+    //background: #1c1c29;
+    background: #1c1c29;
+    overflow: auto;
+}
+.tradeNotesInner {
+    width: 100%;
+    height: 100%;
+}
+.tradeNotesTopBar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: #222231;
+    border-bottom: 1px solid #5e5e5e;
+    cursor: pointer;
+}
+.tradeNotesHdr {
+    display: inline-block;
+    color: rgb(199, 199, 199);
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 3px;
+    text-transform: uppercase;
+}
+.tradeNotesHandle {
+    display: inline-block;
+    color: #ccc;
+    margin-left: 12px;
+    font-size: 11px;
+}
+.closeTradeNotes {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 4px;
+}
+.closeTradeNotes i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+}
+.closeTradeNotes:hover {
+    background: rgba(255,255,255, .12);
+}
+// note results 
+.tradeNoteWrap {
+    position: relative;
+    display: flex;
+    background: transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #fff;
+    margin-left: 15px;
+}
+.newTradeNoteWrap {
+    padding-bottom: 15px;
+}
+.tnBullet {
+    padding-top: 1px;
+    font-size: 22px;
+    color: #dedede;
+}
+.tradeNoteInpt {
+    background: transparent;
+    border: none;
+    padding: 4px 5px;
+    width: calc(100% - 55px);
+    border: 1px solid transparent;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 4px;
+    resize: none;
+}
+.tradeNoteInpt:hover {
+    background: rgba(255,255,255, .08);
+}
+.tradeNoteInpt:focus {
+    outline: none;
+    background: rgba(255,255,255, .08);
+    border: 1px solid rgba(255,255,255, .12);
+}
+.newNoteInpt {
+    background: rgba(255,255,255, .05);
+}
+.newNoteInpt:hover {
+    background: rgba(255,255,255, .08);
+}
+
+.noteInpt:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(180, 180, 180);
+}
+
+.noteInpt::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(180, 180, 180);
+}
+.deleteNoteBtn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #707070;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 4px;
+}
+.deleteNoteBtn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #707070;
+}
+.deleteNoteBtn:hover {
+    background: rgba(255,255,255, .12);
+    cursor: pointer;
+    color: #1e90ff !important;
+}
+.deleteNoteBtn:hover .fa-trash-alt {
+    color: #1e90ff;
+}
+.newTradeNoteWrap > .deleteNoteBtn {
+    display: none;
+}
+.newTradeNoteWrap > .tradeNoteInpt[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+.newTradeNoteWrap > .tradeNoteInpt[placeholder]:empty:focus:before {
+    content: "";
+}
+.confNoteDelete {
+    opacity: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+}
+.deleteTradeNote {
+    padding: 4px 12px;
+    background: #222231;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: ease-out .1s;
+}
+.deleteTradeNote:before {
+
+}
+.deleteTradeNote:hover {
+    background: rgb(204, 0, 0) !important;
+    cursor: pointer;
+    transition: ease-in .1s;
+}
+.deleteTradeNote:hover::before {
+    border-left-color: rgb(204, 0, 0) !important;
+    transition: ease-in .1s;
+}
+.deleteTradeNote:focus {
+    outline: none;
+}
+
+// recent notes section
+
+.dashboardLeft {
+    width: 400px;
+    height: 100%;
+    border: 6px solid #000;
+    border-bottom: none;
+    background: transparent;
+    overflow: hidden;
+}
+.topTradesWrap {
+    height: 50%;
+    border-bottom: 6px solid #000;
+    background: linear-gradient(to right,#1c1c29, #000);
+    background: #0e0e15;
+}
+.topTradesHdrWrap {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    background: rgba(255,255,255, .02);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.topTradesHdrWrap p {
+    color: #dedede;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.topTradesInner {
+    position: relative;
+    height: calc(100% - 30px);
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.topTradeRow {
+    display: flex;
+    padding: 0 10px;
+    width: 100%;
+    color: #ededed;
+}
+.topTradeRow p {
+    margin-bottom: 0;
+    padding: 7px 0;
+}
+.topTradeSymbol {
+    width: 90px;
+}
+.topTradeSide {
+    width: 90px;
+}
+.topTradeDate {
+    width: 130px;
+}
+.topTradeReturn {
+    width: 90px;
+}
+
+//open trades chart section
+
+.openPositionsWrap {
+    height: 50%;
+    background: linear-gradient(to right,#1c1c29, #000);
+    background: #0e0e15;
+    margin-bottom: 5px;
+}
+.openPositionsHdrWrap {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    background: rgba(255,255,255, .02);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.openPositionsHdr {
+    color: #dedede;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.openPositionsChartWrap {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+#openTradesChart {
+    height: 100%;
+    padding-top: 15px;
+}
+
+// return charts
+
+.returnChartsWrap {
+    height: 100%;
+    width: calc(100vw - 570px);
+    overflow: auto;
+    border-top: 6px solid #000;
+}
+
+//main return chart
+
+.plChartWrap {
+    background: transparent;
+    height: calc(100% - 300px);
+    padding-top: 35px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+#pl_chart {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+// daily return chart
+
+.subChartWrap {
+    position: relative;
+    //background-image: linear-gradient(to bottom right, #222230, #1c1c29);
+    //background: #1c1c29;
+    background: transparent;
+    //background: #000;
+    //border: 15px solid black;
+    border-top: none;
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.subChartHdr {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    color: #ededed;
+    font-size: 16px;
+}
+
+// key metrics right
+.keyMetricMsg {
+    color: rgba(255,255,255, .7);
+    text-align: center;
+}
+.keyMetricSection {
+    display: none;
+    width: 180px;
+    height: 100%;
+    padding-right: 12px;
+    overflow: auto;
+    flex-shrink: 0;
+}
+.keyMetric {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 10px;
+    //background: rgba(255,255,255, .12);
+    background: tranparent;
+    border-radius: 2px;
+    //padding: 2px 15px;
+    margin-top: 5px;
+    color: #dedede;
+    width: 100%;
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom, #1c1c29, #13131a);
+    background: #13131a;
+}
+.keyMetric span {
+    display: block;
+    font-weight: 500;
+}
+.tradeCountTopBar span {
+    color: #fff;
+}
+
+.os-scrollbar-handle {
+    background: rgba(102, 102, 133, .5) !important;
+    cursor: default !important;
+}
+.os-scrollbar-track {
+    //background: transparent !important;
+}
+.os-scrollbar-vertical {
+    //background: rgba(16, 16, 26, .6) !important;
+    //border-right: .5px solid rgba(255,255,255, .24);
+    //border-left: .5px solid rgba(255,255,255, .24);
+}
+
+
+.apexcharts-tooltip {
+    background: #000 !important;
+    border: 1px solid rgba(255,255,255, .35) !important;
+    box-shadow: none !important;
+}
+.apexcharts-tooltip-title {
+    background: rgb(39, 39, 39) !important;
+    border: none !important;
+    margin: 0 !important;
+    color: #fff !important;
+    overflow: hidden !important;
+}
+.apexcharts-tooltip-series-group {
+    background: rgb(58, 58, 58) !important;
+    color: #dedede !important;
+    overflow: hidden !important;
+}
+.apexcharts-yaxistooltip, .apexcharts-xaxistooltip {
+    background: rgb(39, 39, 39) !important;
+    color: #ededed !important;
+    border: 1px solid rgba(255,255,255, .35) !important;
+}
+.apexcharts-yaxistooltip-left:before, .apexcharts-yaxistooltip-left:after {
+    border-left-color: rgb(104, 104, 104) !important;
+}
+.apexcharts-xaxistooltip-bottom:before, .apexcharts-xaxistooltip-bottom:after {
+    border-bottom-color: rgb(104, 104, 104) !important;
+}
+
+//hamburger menu -- tools 
+.apexcharts-toolbar {
+    top: -15px !important;
+}
+
+
+/*
+@media only screen and (max-width: 1000px) {
+    .metricsWrap {
+        display: none;
+        position: absolute;
+        float: none;
+        top: 36px;
+        left: 35px;
+        background: #2a2e3b;
+        padding: 0 25px 25px 25px;
+        border-radius: 0 8px 8px 8px;
+        z-index: 998;
+        border: 1px solid #575757;
+    }
+    .keyMetric {
+        display: block;
+        margin-left: 5px;
+    }
+    .metricsBtn {
+        display: block;
+        float: left;
+        margin-left: 15px;
+        margin-top: 9px;
+        color: #dedede;
+        border: none;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 14px;
+        padding: 4px 9px;
+        z-index: 9999;
+    }
+    .metricsBtn:focus, .metricsBtnFocus {
+        outline: none;
+        background: #2a2e3b;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid #575757;
+        border-bottom: none;
+        z-index: 9999;
+    }
+}
+*/

@@ -1,0 +1,131 @@
+        <!-- absolute windows / modals / forms / menus -->
+
+        <div class="sideSelect">
+            <div class="sideSelectItem" side="Long">Long</div>
+            <div class="sideSelectItem" side="Short">Short</div>
+        </div>
+
+        <div class="sortColMenu">
+            <div class="sortColMenuRow" direction="asc"><span>Sort Ascending</span></div>
+            <div class="sortColMenuRow" direction="desc"><span>Sort Descending</span></div>
+        </div>
+
+        <div class="confNoteDelete">
+            <button class="deleteTradeNote">Delete</button>
+        </div>
+
+        <div class="chartErrs">
+            <div class="chartErrsTop">
+                <span></span>
+                <button class="showTradeErrs">Show Trades</button>
+            </div>
+            <div class="chartErrsData"></div>
+        </div>
+
+        <div class="deleteTradesWindow formBackdrop">
+            <div class="deleteTradesForm">
+                <p class="deleteTradesFormHdr">Delete trades?</p>
+                <p class="deleteTradesFormMsg">Notes attatched to trades will also be deleted</p>
+                <div style="text-align: right;">
+                    <button class="cancelDeleteTrades">Cancel</button>
+                    <button class="deleteTradesConfirm">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tradeInfoBackdrop formBackdrop">
+            <div class="tradeInfoWindow">
+
+            </div>
+        </div>
+
+        <div class="addTradeForm">
+            <div class="tradeFormHdrWrap">
+                <p>Add Trade</p>
+            </div>
+            <div class="tradeFormRow">
+                <label>Side
+                    <div class="lsTog">
+                        <span class="atfSide atfActSide" side="Long">Long</span>
+                        <span class="atfSide" side="Short">Short</span>
+                    </div>
+                </label>
+                <label>Symbol<input class="atfInput atfSymbol" placeholder="CCIV" /></label>
+            </div>
+            <div class="tradeFormRow">
+                <label>Entry Date<input class="atfInput atfEntryDate" /></label>
+                <label>Entry Price<input class="atfInput atfEntryPrice" placeholder="0.00" /></label>
+            </div>
+            <div class="tradeFormRow">
+                <label>Quantity<input class="atfInput atfQty" placeholder="0.00000000" /></label>
+                <label>Fees<input class="atfInput atfFees" placeholder="0.00" /></label>
+            </div>
+            <div class="tradeFormRow tradeFormClosedRow">
+                <label>Exit Date<input class="atfInput atfExitDate" /></label>
+                <label>Exit Price<input class="atfInput atfExitPrice" placeholder="0.00" /></label>
+            </div>
+            <div class="tradeFormBtmRow">
+                <label><input class="atfClosedChbx" type="checkbox" />Closed</label>
+                <div class="atfBtnsWrap">
+                    <button class="cancelNewTrade">Cancel</button>
+                    <button class="saveNewTrade">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="settingsForm">
+            <div class="settingsFormRow apiSettingsRow">
+                <span>Api Key</span>
+            </div>
+            <div class="settingsFormRow supportSettingsRow">
+                <span>Support</span>
+            </div>
+            <div style="display: none;" class="settingsFormRow settingsBillingRow">
+                <span>Billing</span>
+            </div>
+            <div class="settingsFormRow signoutBtn">
+                <span>Sign Out</span>
+            </div>
+        </div>
+
+        <div class="newAccountWindow formBackdrop">
+            <div class="newAccountForm">
+                <p class="naf-hdr">New Account</p>
+                <i class="fal fa-times naf-x"></i>
+                <p class="naf-msg">Create a new account to save your trades under.</p>
+                <input class="naf-name" placeholder="Account Name" />
+                <div class="naf-buttonsRow">
+                    <button class="naf-cancelBtn">Cancel</button>
+                    <button class="naf-saveBtn">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="editAccountWindow formBackdrop">
+            <div class="editAccountForm" accountId="">
+                <p class="eaf-hdr">Edit Account</p>
+                <i class="fal fa-times eaf-x"></i>
+                <p class="eaf-msg">Delete this account or change its name</p>
+                <input class="eaf-name" />
+                <div class="eaf-buttonsRow">
+                    <button class="eaf-deleteAccountBtn">Delete Account</button>
+                    <button class="eaf-cancelBtn">Cancel</button>
+                    <button class="eaf-saveBtn">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="confirmAccountDeleteWindow formBackdrop">
+            <div class="confirmAccountDeleteForm">
+                <p class="cadf-hdr">Delete Account?</p>
+                <p class="cadf-msg">All trades, notes, and dashboard metrics will be permenantley deleted from this
+                    account. Confirm the account name by typing it in below if you wish to continue.</p>
+                <p class="cadf-name">Account name: <span></span></p>
+                <input class="cadf-confirmInput" placeholder="Verify account name" />
+                <i class="fal fa-times cadf-x"></i>
+                <div class="cadf-buttonRow">
+                    <button class="cadf-cancelBtn">Cancel</button>
+                    <button class="cadf-confirmBtn" accountId="">Confirm</button>
+                </div>
+            </div>
+        </div>
